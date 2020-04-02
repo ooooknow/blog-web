@@ -1,0 +1,50 @@
+// sidebar
+$menuText: #333333;
+$menuActiveText: #333333;
+$subMenuActiveText: #333333; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg: #fff;
+$menuHover: #fff3ec;
+
+$activeSubMenuBg: #fff3ec;
+
+$subMenuBg: #fff;
+$subMenuHover: #fff3ec;
+
+$sideBarWidth: 200px;
+
+/* 主题色变量 */
+
+$ColorPrimary: #ff8e42;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+    menuText: $menuText;
+    menuActiveText: $menuActiveText;
+    subMenuActiveText: $subMenuActiveText;
+    menuBg: $menuBg;
+    menuHover: $menuHover;
+    subMenuBg: $subMenuBg;
+    subMenuHover: $subMenuHover;
+    sideBarWidth: $sideBarWidth;
+    colorPrimary: $ColorPrimary;
+}
+
+//清除浮动用法
+/*
+  用法
+.container {
+  @include clearfix;
+}
+ */
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
