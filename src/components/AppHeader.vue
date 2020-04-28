@@ -26,32 +26,6 @@
                 </el-dropdown>
             </div>
         </template>
-        <template v-if="!isLogin">
-            <div class="header-welcome">
-                {{ headTitle }}
-            </div>
-            <div class="header-introduce">
-                <div class="introduce-item introduce-item__btn ">
-                    <div class="item-con">
-                        <router-link to="/login">
-                            管理店铺
-                        </router-link>
-                    </div>
-                </div>
-                <div class="introduce-item introduce-item__text">
-                    <div class="item-con">
-                        联系我们 020-31360569
-                    </div>
-                </div>
-                <div class="introduce-item introduce-item__text">
-                    <div class="item-con">
-                        <a href="//platform.maiduocbd.com">
-                            了解麦垛麦
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </template>
     </div>
 </template>
 
